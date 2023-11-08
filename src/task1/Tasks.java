@@ -33,26 +33,35 @@ final class Tasks {
     }
     //(5) - Найти позицию подстроки "Java" в строке "I like Java!!!"
     static void task5(String s) {
-        System.out.println("Позиция подстроки \"Java\" в строке \"I like java\" - " + "I like Java!!!".indexOf("Java"));
+        System.out.println("Позиция подстроки \"Java\" в строке \"I like Java\" - " + "I like Java!!!".indexOf("Java"));
     }
     //(6) - Заменить все символы "a" на "o"
     static void task6(String s) {
-        System.out.println("Замена всех символов \"a\" на \"o\" - " + s.replace('a', 'o'));
+        System.out.println("Замена всех символов \"a\" на \"o\" в строке " + s + " - " + s.replace('a', 'o'));
 
     }
     //(7) - Преобразовать строку к верхнему регистру
     static void task7(String s) {
-        System.out.println("Преобразовали всю строку к верхнему регистру - " + s.toUpperCase());
+        System.out.println("Преобразовали строку " + s + " к верхнему регистру - " + s.toUpperCase());
     }
 
     //(8) - Преобразовать строку к нижнему регистру
     static void task8(String s) {
-        System.out.println("Преобразовали всю строку к нижнему регистру - " + s.toLowerCase());
+        System.out.println("Преобразовали " + s + " к нижнему регистру - " + s.toLowerCase());
     }
 
     //(9) - Вырезать строку "Java"
     static void task9(String s) {
-        System.out.println("Вырезали подстроку \"Java\" из строки " + s + " - "
-                + s.substring(0, s.indexOf("Java")) + s.substring(s.indexOf("Java") + 4));
+        int index = s.indexOf("Java");
+        System.out.print("Вырезали подстроку \"Java\" из строки " + s + " - ");
+        switch (index) {
+            case -1: {
+                System.out.println(s);
+                break;
+            }
+            default: {
+                System.out.println(s.substring(0, s.indexOf("Java")) + s.substring(s.indexOf("Java") + 4));
+            }
+        }
     }
 }

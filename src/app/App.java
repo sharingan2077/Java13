@@ -6,5 +6,8 @@ public class App {
     public static void executeFirstTask() {
         Operations.startTask();
     }
+    public static void executeSecondTask() {
+
+    }
 
 }

@@ -1,7 +1,9 @@
 package task2;
 
+import app.App;
+
 public class Main {
-    String g() {
-        return "dd";
+    public static void main(String[] args) {
+        App.executeSecondTask();
     }
 }

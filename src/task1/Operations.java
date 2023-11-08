@@ -24,12 +24,15 @@ public final class Operations {
                 System.out.println("Так точно! Текущая строка - " + s);
                 operate(s);
                 operateNext();
+                break;
             }
             case "2": {
                 startTask();
+                break;
             }
             case "3": {
                 System.out.println("Приложение завершено!");
+                break;
             }
             default: {
                 System.out.println("Неправильно выбрано действие, повторите попытку:");
@@ -82,7 +85,6 @@ public final class Operations {
             default: {
                 System.out.println("Ошибка");
                 operate(s);
-                break;
             }
         }
     }
