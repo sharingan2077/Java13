@@ -2,7 +2,7 @@ package task3;
 
 import java.util.StringTokenizer;
 
-public class TestAddress {
+public final class TestAddress {
 
     public static void testAddress() {
         String address1 = "Россия, Московская область, Москва, Мичуринский проспект, 31, 2, 37/3";
