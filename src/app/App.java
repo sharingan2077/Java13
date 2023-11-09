@@ -4,8 +4,9 @@ import task1.Operations;
 import task2.PersonTest;
 import task3.TestAddress;
 import task4.TestShirt;
+import task5.TelephoneNumberTest;
 
-public class App {
+public final class App {
     public static void executeFirstTask() {
         Operations.startTask();
     }
@@ -20,8 +21,7 @@ public class App {
         TestShirt.testShirt();
     }
     public static void executeFifthTask() {
-
-
+        TelephoneNumberTest.testNumber();
     }
     public static void executeSixthTask() {
 
