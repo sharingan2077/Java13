@@ -5,6 +5,7 @@ import task2.PersonTest;
 import task3.TestAddress;
 import task4.TestShirt;
 import task5.TelephoneNumberTest;
+import task6.FileTest;
 
 public final class App {
     public static void executeFirstTask() {
@@ -24,7 +25,7 @@ public final class App {
         TelephoneNumberTest.testNumber();
     }
     public static void executeSixthTask() {
-
+        FileTest.testFile();
     }
 
 
